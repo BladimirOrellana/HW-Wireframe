@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Basic web layout</title>
+    <style type="text/css">
+    *, *::before,*::after{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background: gray;
+    }
+
+    .clear-fix{
+    content: "";
+    display: table;
+    clear:both;
+}
+
+    .box{
+    width: 80%;
+    padding: 40px;
+    border: 10px solid grey;
+    margin: 20px auto;
+    }
+
+  
+    .box-style{
+    text-align: center;
+    background: white;
+    color: grey;
+    }
+    .center{
+        text-align: center;
+    }
+    
+    .main{
+    width: 80%;
+    padding: 40px;
+    border: 10px solid grey;
+    margin: 20px auto;
+    text-align: center;
+    
+
+    }
+.section{
+    width: 40%;
+    float: left;
+     background: gray;
+     padding: 20px;
+    border: 10px solid gray;
+    margin: 20px;
+   
+    color: white;
+    
+    
+}
+.aside{
+    width: 40%;
+   float: left;
+   background:white;
+   padding: 20px;
+    border: 10px solid gray;
+    margin: 20px;
+
+   
+}
+
+.article{
+  
+   background: white;
+   border: 10px solid gray;
+   margin: 10px;
+   padding: 10px;
+   color: gray;
+}
+
+.article-heading{
+    
+    background: whitesmoke;
+    padding: 20px;
+    border: 10px solid gray;
+    margin: 20px;
+}
+.article-p{
+    background: whitesmoke;
+    padding: 20px;
+    border: 10px solid gray;
+    margin: 20px;
+}
+
+
+.footer{
+    clear: both;
+}
+@media (max-width: 1390px){
+    .section{
+    width: 80%;
+    float: left;
+     background: gray;
+     padding: 20px;
+    border: 10px solid gray;
+    margin: 20px;
+   
+    color: white;
+    
+    
+}
+.aside{
+    width: 80%;
+   float: left;
+   background:white;
+   padding: 20px;
+    border: 10px solid gray;
+    margin: 20px;
+
+   
+}  
+}
+
+   </style>
+</head>
+<body>
+    <!---HEADER-->
+<header class="header box box-style">
+<h1>Header</h1>
+</header>
+<!---NAV-->
+<nav class="nav box box-style">
+    <h2>Nav</h2>
+</nav>
+<!---MAIN-->
+<main class=" main box-style clear-fix center">
+        <header>
+                <h2>Main</h2>
+            </header>
+  <!---SECTION--> 
+<section class="section">
+        <header>
+                <h2>Section</h2>
+            </header>
+    <!---ARTICLE-->
+    <article class="article">
+            <header>
+                    <h2>article</h2>
+                </header>
+            <h1 class="article-heading">h1, h2, h3</h1>
+            <p class="article-p">p</p>
+        </article>
+</section>
+<!---ASIDE-->
+<aside class="aside ">
+        <header>
+            <h2>aside</h2>
+        </header>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </aside>
+ </main>
+<!---FOOTER-->
+<footer class="footer box box-style">
+        <h2>Footer</h2>
+</footer>
+
+
+    
+</body>
+</html>
