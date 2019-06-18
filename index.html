@@ -12,6 +12,8 @@
     }
     body{
         background: gray;
+        box-sizing: border-box;
+        
     }
 
     .clear-fix{
@@ -20,15 +22,17 @@
     clear:both;
 }
 
-    .box{
+    .container{
     width: 80%;
     padding: 40px;
     border: 10px solid grey;
     margin: 20px auto;
+    letter-spacing: 3px;
+    text-transform: uppercase;
     }
 
   
-    .box-style{
+    .container-style{
     text-align: center;
     background: white;
     color: grey;
@@ -37,15 +41,7 @@
         text-align: center;
     }
     
-    .main{
-    width: 80%;
-    padding: 40px;
-    border: 10px solid grey;
-    margin: 20px auto;
-    text-align: center;
-    
-
-    }
+   
 .section{
     width: 40%;
     float: left;
@@ -91,49 +87,68 @@
     border: 10px solid gray;
     margin: 20px;
 }
+.main-content{
+    margin: 0 auto;
+    clear: both;
+    padding: 20px;
+    border:  10px solid gray;
+    height: 100vh;
 
+}
 
 .footer{
     clear: both;
 }
 @media (max-width: 1390px){
-    .section{
+
+    .container{
     width: 80%;
-    float: left;
-     background: gray;
-     padding: 20px;
-    border: 10px solid gray;
-    margin: 20px;
-   
-    color: white;
+    padding: 20px;
+    border: 1px solid grey;
+    margin: 0 auto;
+    }
+    
+    .section{
+    width: 95%;
+    border: none;
+    margin: 0 auto;
+    padding: 10px;
+  
     
     
 }
 .aside{
-    width: 80%;
-   float: left;
-   background:white;
-   padding: 20px;
-    border: 10px solid gray;
-    margin: 20px;
+    width: 90%;
+    border: none;
+    margin: 0 auto;
+    padding: 10px;
+   
 
    
 }  
+
+.main-content{
+    margin: 0 auto;
+    clear: both;
+    padding: 20px;
+    border:  1px solid gray;
+    height: 100vh;
+}
 }
 
    </style>
 </head>
 <body>
     <!---HEADER-->
-<header class="header box box-style">
+<header class="header container container-style">
 <h1>Header</h1>
 </header>
 <!---NAV-->
-<nav class="nav box box-style">
+<nav class="nav container container-style">
     <h2>Nav</h2>
 </nav>
 <!---MAIN-->
-<main class=" main box-style clear-fix center">
+<main class=" container container-style clear-fix center">
         <header>
                 <h2>Main</h2>
             </header>
@@ -158,13 +173,18 @@
         </header>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </aside>
+    <section class="box box-style> main-content">
+        MAIN CONTENT
+    </section>
  </main>
 <!---FOOTER-->
-<footer class="footer box box-style">
+<footer class="footer container container-style">
         <h2>Footer</h2>
 </footer>
 
 
-    
+ <header>
+     
+ </header> 
 </body>
 </html>
